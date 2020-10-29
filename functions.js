@@ -2,36 +2,40 @@ function onClick(element) {
 	
   document.getElementById("thumbs").src = element.src;
   
+  
   document.getElementById("original-image").style.display = "block";
+  
   
 }
 
-function loadPicture(widget){
+function onClickPoke(){
 	
-	document.getElementById("teste").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("original-image-poke").style.display = "block";
 	
 }
+
+//Start Slide
 
 function startSlide(){
 	
 	max = 2;
 	min = 1;
 	pic = min;
-	t = true;
 		
-	loadPicture("Poke1.png");
-	
-	
-	
-}
-
-function endT(){
-	
-	t = true;
+	loadPokePicture("Poke1.png");
+	loadPurplePicture("Purple1.png");
 	
 }
 
-function next(){
+//Pokemon Widgets Slide
+
+function loadPokePicture(widget){
+	
+	document.getElementById("poke-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	
+}
+
+function pokeNext(){
 		
 		pic++;
 	
@@ -41,17 +45,12 @@ function next(){
 		
 		}
 	
-		loadPicture("Poke"+pic+".png");
-		
-
-	
+		loadPokePicture("Poke"+pic+".png");	
+ event.stopPropagation();		
 	
 }
 
-function prev(){
-	
-	
-		
+function pokePrev(){		
 			
 		pic--;
 	
@@ -61,6 +60,57 @@ function prev(){
 		
 		}
 	
-		loadPicture("Poke"+pic+".png");
+		loadPokePicture("Poke"+pic+".png");
+		 event.stopPropagation();
+	
+}
+
+
+function disabledEventPropagation(event)
+{
+   if (event.stopPropagation){
+      
+   }
+
+  // explorer
+   else if(window.event){
+      window.event.cancelBubble=true;
+   }
+}
+
+
+//Purple Widgets Slide
+
+function loadPurplePicture(widget){
+	
+	document.getElementById("purple-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	
+}
+
+function purpleNext(){
+		
+		pic++;
+	
+		if(pic > max){
+		
+			pic = min;
+		
+		}
+	
+		loadPurplePicture("Purple"+pic+".png");			
+	
+}
+
+function purplePrev(){		
+			
+		pic--;
+	
+		if(pic <min){
+		
+			pic = max;
+		
+		}
+	
+		loadPurplePicture("Purple"+pic+".png");
 	
 }

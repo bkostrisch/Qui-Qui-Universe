@@ -20,6 +20,8 @@
 		<li><a class="button-nav left-border" href="Home.html">Home</a></li>
 		<li><a class="button-nav current-page" href="Widgets.html">Widgets</a></li>
 		<li><a class="button-nav">Overlays</a></li>
+		<li><a class="button-nav">Payment</a></li>
+		<li><a class="button-nav">Extras</a></li>
 		<li><a class="button-nav right-border">Contact</a></li>
 	</ul>
 	</div>
@@ -29,21 +31,54 @@
 <div class="main-card">
 
 <label class="page-title center-nav">Widgets</label>
+<h3 class="center-nav">Aqui você encontra Chats e Goals (Donations, Subscribers, Bits, Follow). Você pode usar esses de inspiração para fazer um novo com as características que você quiser. Use sua criatividade para misturar da forma como preferir!<br>Lembre-se: é possível adquirir só o chat ou só as goals porém o combinho sai mais em conta ! ☺<h3>
 
 <div class="row">
 
-<div id="teste" class="widgets column">
+<div id="left-widgets" class="column">
+
+<div id="poke-widgets" class="widgets" onclick="onClickPoke()">
+
 	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="prev()"/>
+		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="pokePrev()"/>
 	</div>
+	
 	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="next()"/>
+		<input type="button" value=">" class="btn-next-widgets" onclick="pokeNext()"/>
 	</div>
+		
+</div>
+
+</div>
+
+<div id="right-widgets" class="column">
+
+<div id="purple-widgets" class="widgets-left" onclick="">
+
+	<div class="btn-prev column">
+		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="purplePrev()"/>
+	</div>
+	
+	<div class="btn-next column">
+		<input type="button" value=">" class="btn-next-widgets" onclick="purpleNext()"/>
+	</div>
+		
+</div>
+	
 </div>
 
 </div>
 
 </div>
+
+
+<div id="original-image-poke" class="original-size-image" onclick="this.style.display='none'">
+  <span class="button-original-image">&times;</span>
+  <div class="spawn-original-widget animated-spawn">
+    <img  src="Images/PurpleOverlayView.png"  style="width:100%">
+  </div>
+</div>
+
 
 <footer>Site desenvolvido por: <a href="https://github.com/bkostrisch">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
 </body>

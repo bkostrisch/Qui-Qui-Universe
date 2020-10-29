@@ -37,7 +37,6 @@ ul {
 	margin-top: 1.5%;
 	margin-bottom: -0.5%;
 	padding: 0;	
-	
 }
 
 h1{
@@ -94,10 +93,23 @@ footer a:hover{
 	
 }
 
+
 #navbar a:hover{
 	
 	color: white;
 	background-color: #DFD8E6;
+	
+}
+
+#left-widgets{
+	
+	padding-left: 60px;	
+	
+}
+
+#right-widgets{
+	
+	padding-right: 60px;	
 	
 }
 
@@ -253,6 +265,14 @@ footer a:hover{
 	width:600px;
 }
 
+.spawn-original-widget{
+	margin:auto;
+	position:relative;
+	padding:0px;
+	outline:0;
+	width:1000px;
+}
+
 .animated-spawn{
 	animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}
 }
@@ -277,6 +297,26 @@ footer a:hover{
 	background-size: 100% 100%;
 	border-radius: 20px;
 	box-shadow: 0px 0px 20px rgb(202, 190, 214);
+	
+}
+.widgets-left{
+	
+	width: 350px;
+	height: 300px;
+	margin-left: auto;
+	position: relative;
+	background-color: #dfd8e6;
+	transition: background-image 1s;
+	background-size: 100% 100%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px rgb(202, 190, 214);
+	
+}
+
+.primary-widgets-div{
+	
+	width: 350px;
+	height: 300px;
 	
 }
 
