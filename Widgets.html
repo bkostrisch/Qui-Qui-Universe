@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<title>Qui Qui Universe</title>
+	<link rel="shortcut icon" href="Images/Q.png">
+	<script src="functions.js"></script>
+	
+</head>
+
+<body onload="startSlide()">
+
+<header>
+
+	<img class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe" width="25%" height="25%">
+	<div id="navbar" class="center-nav">
+	<ul>
+		<li><a class="button-nav left-border" href="Home.html">Home</a></li>
+		<li><a class="button-nav current-page" href="Widgets.html">Widgets</a></li>
+		<li><a class="button-nav">Overlays</a></li>
+		<li><a class="button-nav right-border">Contact</a></li>
+	</ul>
+	</div>
+	
+</header>
+
+<div class="main-card">
+
+<label class="page-title center-nav">Widgets</label>
+
+<div class="row">
+
+<div id="teste" class="widgets column">
+	<div class="btn-prev column">
+		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="prev()"/>
+	</div>
+	<div class="btn-next column">
+		<input type="button" value=">" class="btn-next-widgets" onclick="next()"/>
+	</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>Site desenvolvido por: <a href="https://github.com/bkostrisch">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
+</body>
+</html>
