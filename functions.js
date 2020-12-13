@@ -1,7 +1,7 @@
 //Show a biggest image
 
 
-//Profile Picturo - Home
+//Profile Picture - Home
 function onClick(element) {
 	
   document.getElementById("thumbs").src = element.src;
@@ -54,6 +54,41 @@ function onClickSunset(){
 	
 }
 
+//Brown Bear Widgets View - Widgets
+function onClickBbear(){
+	
+	document.getElementById("original-image-bbear").style.display = "block";
+	
+}
+
+//Polar Bear Widgets View - Widgets
+function onClickPbear(){
+	
+	document.getElementById("original-image-pbear").style.display = "block";
+	
+}
+
+//Panda Bear Widgets View - Widgets
+function onClickPnbear(){
+	
+	document.getElementById("original-image-pnbear").style.display = "block";
+	
+}
+
+//Red Panda Bear Widgets View - Widgets
+function onClickRbear(){
+	
+	document.getElementById("original-image-rbear").style.display = "block";
+	
+}
+
+//Star Widgets View - Widgets
+function onClickStar(){
+	
+	document.getElementById("original-image-star").style.display = "block";
+	
+}
+
 //Start Slide
 function startSlide(){
 	
@@ -67,12 +102,17 @@ function startSlide(){
 	loadFlamingoPicture("Flamingo1.png");
 	loadPokecPicture("PokeC1.png");
 	loadSunsetPicture("Sunset1.png");
+	loadBbearPicture("Bbear1.png");
+	loadPbearPicture("Pbear1.png");
+	loadPnbearPicture("Pnbear1.png");
+	loadRbearPicture("Rbear1.png");
+	loadStarPicture("Star1.png");
 }
 
 //Pokemon Widgets Slide
 function loadPokePicture(widget){
 	
-	document.getElementById("poke-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("poke-widgets").src = './Images/' + widget;
 	
 }
 
@@ -109,7 +149,7 @@ function pokePrev(){
 //Purple Widgets Slide
 function loadPurplePicture(widget){
 	
-	document.getElementById("purple-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("purple-widgets").src = './Images/' + widget;
 	
 }
 
@@ -146,7 +186,7 @@ function purplePrev(){
 //Neon Widgets Slide
 function loadNeonPicture(widget){
 	
-	document.getElementById("neon-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("neon-widgets").src = './Images/' + widget;
 	
 }
 
@@ -183,7 +223,7 @@ function neonPrev(){
 //Flamingo Widgets Slide
 function loadFlamingoPicture(widget){
 	
-	document.getElementById("flamingo-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("flamingo-widgets").src = './Images/' + widget;
 	
 }
 
@@ -220,7 +260,7 @@ function flamingoPrev(){
 //Pokémon Classic Widgets Slide
 function loadPokecPicture(widget){
 	
-	document.getElementById("pokec-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("pokec-widgets").src = './Images/' + widget;
 	
 }
 
@@ -256,7 +296,7 @@ function pokecPrev(){
 //Sunset Widgets Slide
 function loadSunsetPicture(widget){
 	
-	document.getElementById("sunset-widgets").style.backgroundImage="URL(Images/"+widget+")";	
+	document.getElementById("sunset-widgets").src = './Images/' + widget;
 	
 }
 
@@ -286,6 +326,192 @@ function sunsetPrev(){
 		}
 	
 		loadSunsetPicture("Sunset"+pic+".png");
+		event.stopPropagation();
+	
+}
+
+//Brown Bear Widgets Slide
+function loadBbearPicture(widget){
+	
+	document.getElementById("bbear-widgets").src = './Images/' + widget;
+	
+}
+
+function bbearNext(){
+		
+		pic++;
+	
+		if(pic > max){
+		
+			pic = min;
+		
+		}
+	
+		loadBbearPicture("Bbear"+pic+".png");		
+		event.stopPropagation();	
+	
+}
+
+function bbearPrev(){		
+			
+		pic--;
+	
+		if(pic <min){
+		
+			pic = max;
+		
+		}
+	
+		loadBbearPicture("Bbear"+pic+".png");
+		event.stopPropagation();
+	
+}
+
+
+//Polar Bear Widgets Slide
+function loadPbearPicture(widget){
+	
+	document.getElementById("pbear-widgets").src = './Images/' + widget;	
+	
+}
+
+function pbearNext(){
+		
+		pic++;
+	
+		if(pic > max){
+		
+			pic = min;
+		
+		}
+	
+		loadPbearPicture("Pbear"+pic+".png");		
+		event.stopPropagation();	
+	
+}
+
+function pbearPrev(){		
+			
+		pic--;
+	
+		if(pic <min){
+		
+			pic = max;
+		
+		}
+	
+		loadPbearPicture("Pbear"+pic+".png");
+		event.stopPropagation();
+	
+}
+
+//Panda Bear Widgets Slide
+function loadPnbearPicture(widget){
+	
+	document.getElementById("pnbear-widgets").src = './Images/' + widget;
+	
+}
+
+function pnbearNext(){
+		
+		pic++;
+	
+		if(pic > max){
+		
+			pic = min;
+		
+		}
+	
+		loadPnbearPicture("Pnbear"+pic+".png");		
+		event.stopPropagation();	
+	
+}
+
+function pnbearPrev(){		
+			
+		pic--;
+	
+		if(pic <min){
+		
+			pic = max;
+		
+		}
+	
+		loadPnbearPicture("Pnbear"+pic+".png");
+		event.stopPropagation();
+	
+}
+
+//Polar Bear Widgets Slide
+function loadRbearPicture(widget){
+	
+	document.getElementById("rbear-widgets").src = './Images/' + widget;
+	
+}
+
+function rbearNext(){
+		
+		pic++;
+	
+		if(pic > max){
+		
+			pic = min;
+		
+		}
+	
+		loadRbearPicture("Rbear"+pic+".png");		
+		event.stopPropagation();	
+	
+}
+
+function rbearPrev(){		
+			
+		pic--;
+	
+		if(pic <min){
+		
+			pic = max;
+		
+		}
+	
+		loadRbearPicture("Rbear"+pic+".png");
+		event.stopPropagation();
+	
+}
+
+//Star Dust Widgets Slide
+function loadStarPicture(widget){
+	
+	document.getElementById("star-widgets").src = './Images/' + widget;
+	
+}
+
+function starNext(){
+		
+		pic++;
+	
+		if(pic > max){
+		
+			pic = min;
+		
+		}
+	
+		loadStarPicture("Star"+pic+".png");		
+		event.stopPropagation();	
+	
+}
+
+function starPrev(){		
+			
+		pic--;
+	
+		if(pic <min){
+		
+			pic = max;
+		
+		}
+	
+		loadStarPicture("Star"+pic+".png");
 		event.stopPropagation();
 	
 }
