@@ -174,7 +174,7 @@ footer a:hover{
 
 }
 
-#how-works{
+#how-works {
 
 	width: 50%;
 	margin-left: 5%;
@@ -186,6 +186,63 @@ footer a:hover{
 	width:100%;
 }
 
+#widgets-title {
+
+	text-align: center;
+	margin: 0;
+
+}
+
+#widgets-description {
+
+	text-align: center;
+	padding: 0 10px;
+
+}
+
+#btn-slide {
+
+  	text-align: center;
+}
+
+#left-widgets {
+
+	margin-top: 5%;
+	margin-left: 5%;
+	padding-right: 10px;
+
+}
+
+#right-widgets {
+
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: 5%;
+	padding-left: 10px;
+}
+
+.img-size img {
+
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 30px;	
+
+}
+
+.img-size img:hover {
+
+	cursor: pointer;
+	opacity: 0.8;	
+
+}
+
+.img-widget{
+	
+	border-radius: 30px;
+	
+}
 
 .current-page{
 
@@ -222,8 +279,8 @@ footer a:hover{
 .original-size-image{
 	z-index:3;
 	display:none;
-	padding-top:100px;
-	position:fixed;
+	padding-top: 80px;
+	position: fixed;
 	left:0;
 	top:0;
 	width:100%;
@@ -272,11 +329,33 @@ footer a:hover{
 	position:relative;
 	padding:0px;
 	outline:0;
-	width:800px;
+	width: 40%;
 }
 
 .animated-spawn{
-	animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}
+	animation:animatezoom 1s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}
+}
+
+.btn-widgets{
+	
+	font-size: 25px;
+	font-weight: bold;
+	border: solid #DFD8E6;
+	padding: 2px 10px;
+	background-color: white;
+	text-align: center;
+	cursor: pointer;
+	color: #bfb1cd;
+	border-radius: 100px;
+	opacity: 0.6;
+	
+
+}
+
+.btn-widgets:hover{
+	
+	opacity: 1;
+	
 }
 
 @media screen and (max-width: 650px) {
@@ -293,7 +372,7 @@ footer a:hover{
   	text-align: center;
 	margin-top: 4%;	
 	
-}
+	}
 
 
 	.rounded-picture{
@@ -348,6 +427,21 @@ footer a:hover{
 
 	}
 
+	#left-widgets {
+
+		padding: 15px 10px;
+		margin: 0;
+		text-align: center;
+	}
+
+	#right-widgets {
+
+		padding: 15px 10px;
+		margin: 0;
+		text-align: center;
+	}
+
+
 	#thumbs {
 
 	width:65%;
@@ -365,7 +459,7 @@ footer a:hover{
 
 	#thumbs {
 
-	width:90%;
+	width: 90%;
 
 	}
 
