@@ -89,6 +89,62 @@ function onClickStar(){
 	
 }
 
+//Ice Cream Overlay View - Overlay
+function onClickIceCream(){
+	
+	document.getElementById("original-image-icecream").style.display = "block";
+	
+}
+
+//Diana Overlay View - Overlay
+function onClickDiana(){
+	
+	document.getElementById("original-image-diana").style.display = "block";
+	
+}
+
+//Diana Overlay View - Overlay
+function onClickLilac(){
+	
+	document.getElementById("original-image-lilac").style.display = "block";
+	
+}
+
+//Vinicin Overlay View - Overlay
+function onClickVinicin(){
+	
+	document.getElementById("original-image-vinicin").style.display = "block";
+	
+}
+
+//Kamael Overlay View - Overlay
+function onClickKamael(){
+	
+	document.getElementById("original-image-kamael").style.display = "block";
+	
+}
+
+//Pato Overlay View - Overlay
+function onClickPato(){
+	
+	document.getElementById("original-image-pato").style.display = "block";
+	
+}
+
+//Layman Overlay View - Overlay
+function onClickLayman(){
+	
+	document.getElementById("original-image-layman").style.display = "block";
+	
+}
+
+//Maickilin Overlay View - Overlay
+function onClickMaickilin(){
+	
+	document.getElementById("original-image-maickilin").style.display = "block";
+	
+}
+
 //Start Slide
 function startSlide(){
 	
@@ -514,4 +570,38 @@ function starPrev(){
 		loadStarPicture("Star"+pic+".png");
 		event.stopPropagation();
 	
+}
+
+// Change Overlay Image
+
+function changeIceCream(img) {
+    document.getElementById("icecream-overlay").src = 'Images/' + img + ".png";
+}
+
+function changeLilac(img) {
+    document.getElementById("lilac-overlay").src = 'Images/' + img + ".png";
+}
+
+function changeLayman(img) {
+    document.getElementById("layman-overlay").src = 'Images/' + img + ".png";
+}
+
+function changeVinicin(img) {
+    document.getElementById("vinicin-overlay").src = 'Images/' + img + ".png";
+}
+
+function changeKamael(img) {
+    document.getElementById("kamael-overlay").src = 'Images/' + img + ".png";
+}
+
+function changePato(img) {
+    document.getElementById("pato-overlay").src = 'Images/' + img + ".png";
+}
+
+function changeDiana(img) {
+    document.getElementById("diana-overlay").src = 'Images/' + img + ".png";
+}
+
+function changeMaickilin(img) {
+    document.getElementById("maickilin-overlay").src = 'Images/' + img + ".png";
 }

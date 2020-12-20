@@ -2,200 +2,46 @@
 <html>
 <head>
 
-	<link rel="stylesheet" type="text/css" href="payments.css">
-	<meta charset="UTF-8">
-	<title>Qui Qui Universe</title>
-	<link rel="shortcut icon" href="Images/Q.png">
-	<script src="functions.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Qui Qui Universe</title>
+  <link rel="shortcut icon" href="Images/Q.png">
+  <script src="functions.js"></script>
+  
 </head>
 
-<body onload="startSlide()">
+<body>
 
-<header>
+  <header>
 
-	<img class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe" width="25%" height="25%">
-	<div id="navbar" class="center-nav">
-	<ul>
-		<li><a class="button-nav left-border" href="Home.html">Home</a></li>
-		<li><a class="button-nav current-page" href="Widgets.html">Widgets</a></li>
-		<li><a class="button-nav">Overlays</a></li>
-		<li><a class="button-nav">Payment</a></li>
-		<li><a class="button-nav">Extras</a></li>
-		<li><a class="button-nav right-border">Contact</a></li>
-	</ul>
-	</div>
-	
-</header>
+    <img id="logo" class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe">
 
-<div class="main-card">
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Widgets.html">Widgets</a></li>
+        <li><a href="Overlays.html">Overlays</a></li>
+        <li><a class="current-page" href="Payment.html">Payment</a></li>
+        <li><a>Extras</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
 
-<label class="page-title center-nav">Widgets</label>
-<h3 class="center-nav">Aqui você encontra Chats e Goals (Donations, Subscribers, Bits, Follow). Você pode usar esses de inspiração para fazer um novo com as características que você quiser. Use sua criatividade para misturar da forma como preferir!<br>Lembre-se: é possível adquirir só o chat ou só as goals porém o combinho sai mais em conta ! ☺<h3>
+  </header>
 
-<!-- First Line -->
-<div class="row">
+  <div id="card">
+    
+  	<h1 id="titles">Formas de Pagamento</h1>
 
-<div id="left-widgets" class="column">
+    <div id="payment-methods">
+      <h3>Picpay</h3>
+      <h3>Paypal (+10%)</h3>
+      <h3>Depósito em Conta</h3>
+      <h3>Pix</h3>
+    </div>
 
-<div id="sunset-widgets" class="widgets" onclick="onClickSunset()">
-
-	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="sunsetPrev()"/>
-	</div>
-	
-	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="sunsetNext()"/>
-	</div>
-		
-</div>
-	
-</div>
-
-<div id="right-widgets" class="column">
-
-<div id="purple-widgets" class="widgets-right" onclick="onClickPurple()">
-
-	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="purplePrev()"/>
-	</div>
-	
-	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="purpleNext()"/>
-	</div>
-		
-</div>
-	
-</div>
-
-</div>
-
-<!-- Second Line -->
-<div class="row">
-
-<div id="left-widgets" class="column">
-
-<div id="neon-widgets" class="widgets" onclick="onClickNeon()">
-
-	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="neonPrev()"/>
-	</div>
-	
-	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="neonNext()"/>
-	</div>
-		
-</div>
-
-</div>
-
-<div id="right-widgets" class="column">
-
-<div id="flamingo-widgets" class="widgets-right" onclick="onClickFlamingo()">
-
-	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="flamingoPrev()"/>
-	</div>
-	
-	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="flamingoNext()"/>
-	</div>
-		
-</div>
-	
-</div>
-
-</div>
-
-<!-- Third Line -->
-<div class="row">
-
-<div id="left-widgets" class="column">
-
-<div id="pokec-widgets" class="widgets" onclick="onClickPokec()">
-
-	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="pokecPrev()"/>
-	</div>
-	
-	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="pokecNext()"/>
-	</div>
-		
-</div>
-
-</div>
-
-<div id="right-widgets" class="column">
-
-<div id="poke-widgets" class="widgets-right" onclick="onClickPoke()">
-
-	<div class="btn-prev column">
-		<input type="button" value="<" class="btn-prev-widgets" align="left" onclick="pokePrev()"/>
-	</div>
-	
-	<div class="btn-next column">
-		<input type="button" value=">" class="btn-next-widgets" onclick="pokeNext()"/>
-	</div>
-		
-</div>
-
-</div>
-
-</div>
-
-<!-- Images that will appears after click respective widget -->
-
-<!-- Pokémon Widgets -->
-<div id="original-image-poke" class="original-size-image" onclick="this.style.display='none'">
-  <span class="button-original-image">&times;</span>
-  <div class="spawn-original-widget animated-spawn">
-    <img  src="Images/PokeWidgetsView.png" class="img-widget">
   </div>
-</div>
-
-<!-- Purple Widgets -->
-<div id="original-image-purple" class="original-size-image" onclick="this.style.display='none'">
-  <span class="button-original-image">&times;</span>
-  <div class="spawn-original-widget animated-spawn">
-    <img  src="Images/PurpleWidgetsView.png" class="img-widget">
-  </div>
-</div>
-
-<!-- Neon Widgets -->
-<div id="original-image-neon" class="original-size-image" onclick="this.style.display='none'">
-  <span class="button-original-image">&times;</span>
-  <div class="spawn-original-widget animated-spawn">
-    <img  src="Images/NeonWidgetsView.png" class="img-widget">
-  </div>
-</div>
-
-<!-- Flamingo Widgets -->
-<div id="original-image-flamingo" class="original-size-image" onclick="this.style.display='none'">
-  <span class="button-original-image">&times;</span>
-  <div class="spawn-original-widget animated-spawn">
-    <img  src="Images/FlamingoWidgetsView.png" class="img-widget">
-  </div>
-</div>
-
-<!-- Pokémon Classic Widgets -->
-<div id="original-image-pokec" class="original-size-image" onclick="this.style.display='none'">
-  <span class="button-original-image">&times;</span>
-  <div class="spawn-original-widget animated-spawn">
-    <img  src="Images/PokeCWidgetsView.png" class="img-widget">
-  </div>
-</div>
-
-<!-- Sunset Widgets -->
-<div id="original-image-sunset" class="original-size-image" onclick="this.style.display='none'">
-  <span class="button-original-image">&times;</span>
-  <div class="spawn-original-widget animated-spawn">
-    <img  src="Images/SunsetWidgetsView.png" class="img-widget">
-  </div>
-</div>
-
-</div>
 
 <footer>Site desenvolvido por: <a href="https://github.com/bkostrisch">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
 </body>

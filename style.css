@@ -137,8 +137,7 @@ footer a:hover{
     width: auto;
     height: auto;
 	border-radius: 40px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 
 }
 
@@ -148,7 +147,6 @@ footer a:hover{
 	width: 50%;
 	position: relative;
 }
-
 
 #about{
 
@@ -167,7 +165,7 @@ footer a:hover{
   	margin-top: 5%;
 }
 
-#flex {
+.flex {
 
 	display: flex;
 	padding-bottom: 30px;
@@ -183,10 +181,10 @@ footer a:hover{
 
 #thumbs {
 
-	width:100%;
+	width: 40%;
 }
 
-#widgets-title {
+#titles {
 
 	text-align: center;
 	margin: 0;
@@ -221,6 +219,60 @@ footer a:hover{
 	padding-left: 10px;
 }
 
+#overlays h1 {
+
+	text-align: center;	
+	margin: 0 0 0.5% 0;
+	font-size: 2.8rem;
+
+}
+
+#overlays label {
+
+	padding-right: 1%;
+}
+
+#overlays img {
+
+	width: auto;
+	height: auto;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	border-radius: 30px;
+}
+
+#overlays img:hover {
+
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+#radio-group {
+
+	text-align: center;
+	margin-bottom: 1%;
+
+}
+
+#payment-methods {
+
+	padding: 10px;
+
+}
+
+#payment-methods h3 {
+
+	text-align: center;
+	font-size: 1.5rem;
+	text-shadow: 1px 1px #000;
+	font-family: 'Sweety';
+	color: #b3a2c3;
+
+}
+
 .img-size img {
 
 	width: auto;
@@ -241,7 +293,13 @@ footer a:hover{
 .img-widget{
 	
 	border-radius: 30px;
+	width: 45%;	
+}
+
+.img-overlay{
 	
+	border-radius: 30px;
+	width: 85%;	
 }
 
 .current-page{
@@ -284,6 +342,7 @@ footer a:hover{
 	left:0;
 	top:0;
 	width:100%;
+	margin: auto;
 	height:100%;
 	overflow:auto;
 	background-color:rgba(234, 229, 239, 0.5);
@@ -291,6 +350,7 @@ footer a:hover{
 
 .button-original-image{
 	font-size:30px;
+	font-family: initial;
 	border:none;
 	display:inline-block;
 	padding:8px 16px;
@@ -317,23 +377,31 @@ footer a:hover{
 
 
 .spawn-original-image{
-	margin:auto;
-	position:relative;
-	padding:0px;
-	outline:0;
-	width:600px;
+	margin: auto;
+	position: relative;
+	padding: 0px;
+	outline: 0;
+	text-align: center;
 }
 
 .spawn-original-widget{
-	margin:auto;
-	position:relative;
-	padding:0px;
-	outline:0;
-	width: 40%;
+	margin: auto;
+	position: relative;
+	padding: 0px;
+	outline: 0;
+	text-align: center;
+}
+
+.spawn-original-overlay{
+	margin: auto;
+	position: relative;
+	padding: 0px;
+	outline: 0;
+	text-align: center;
 }
 
 .animated-spawn{
-	animation:animatezoom 1s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}
+	animation:animatezoom 2s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}
 }
 
 .btn-widgets{
@@ -356,6 +424,85 @@ footer a:hover{
 	
 	opacity: 1;
 	
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cfbae8; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bc9fdf; 
+}
+
+:root {
+  --color: rebeccapurple;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #8b7c9c;
+    font-family: 'Song';
+    font-size: 1.4rem;
+    font-weight: 0;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #DFD8E6;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px #d6b6fb;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #bfb1cd;
+    position: absolute;
+    box-shadow: 0px 0px 5px #d6b6fb;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 1s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 @media screen and (max-width: 650px) {
@@ -394,7 +541,7 @@ footer a:hover{
 
 	}	
 
-	#flex {
+	.flex {
 
 		display: block;
 		padding-bottom: 30px;
@@ -444,7 +591,7 @@ footer a:hover{
 
 	#thumbs {
 
-	width:65%;
+	width: 65%;
 
 	}
 
