@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Qui Qui Universe</title>
+  <link rel="shortcut icon" href="Images/Q.png">
+  <script src="functions.js"></script>
+  
+</head>
+
+<body onload="startSlide()">
+
+  <header>
+
+    <img id="logo" class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe">
+
+    <nav>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a class="current-page" href="Widgets">Widgets</a></li>
+        <li><a href="Overlays">Overlays</a></li>
+        <li><a href="Payment">Payment</a></li>
+        <li><a href="Extra">Extras</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id="card">
+
+    <h1 id="titles">Widgets</h1>
+	   <h3 id="widgets-description">Aqui você encontra Chats e Goals (Donations, Subscribers, Bits, Follow). Você pode usar esses de inspiração para fazer um novo com as características que você quiser. Use sua criatividade para misturar da forma como preferir!<br>Lembre-se: é possível adquirir só o chat ou só as goals porém o combinho sai mais em conta ! ☺<h3>
+
+    
+    <div class="flex img-size">
+
+      <div id="left-widgets">  
+
+        <img id="sunset-widgets" onclick="onClickSunset()" src="Images/Sunset1.png"> 
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="sunsetPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="sunsetNext()"/>
+        </div>
+
+      </div>
+
+       <div id="right-widgets">  
+
+        <img id="purple-widgets" onclick="onClickPurple()" src="Images/Purple1.png">
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="purplePrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="purpleNext()"/>
+        </div>
+
+      </div>
+
+    </div>   
+
+     <div class="flex img-size">
+
+      <div id="left-widgets">  
+
+        <img id="neon-widgets" onclick="onClickNeon()" src="Images/Neon1.png"> 
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="neonPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="neonNext()"/>
+        </div>
+
+      </div>
+
+       <div id="right-widgets">  
+
+        <img id="flamingo-widgets" onclick="onClickFlamingo()" src="Images/Flamingo1.png">
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="flamingoPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="flamingoNext()"/>
+        </div>
+
+      </div>
+
+    </div>   
+
+    <div class="flex img-size">
+
+      <div id="left-widgets">  
+
+        <img id="pokec-widgets" onclick="onClickPokec()" src="Images/Pokec1.png"> 
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="pokecPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="pokecNext()"/>
+        </div>
+
+      </div>
+
+       <div id="right-widgets">  
+
+        <img id="poke-widgets" onclick="onClickPoke()" src="Images/Poke1.png">
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="pokePrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="pokeNext()"/>
+        </div>
+
+      </div>
+
+    </div> 
+
+	<div class="flex img-size">
+
+      <div id="left-widgets">  
+
+        <img id="bbear-widgets" onclick="onClickBbear()" src="Images/Bbear1.png"> 
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="bbearPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="bbearNext()"/>
+        </div>
+
+      </div>
+
+       <div id="right-widgets">  
+
+        <img id="pbear-widgets" onclick="onClickPbear()" src="Images/Pbear1.png">
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="pbearPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="pbearNext()"/>
+        </div>
+
+      </div>
+
+    </div> 
+
+    <div class="flex img-size">
+
+      <div id="left-widgets">  
+
+        <img id="pnbear-widgets" onclick="onClickPnbear()" src="Images/Pnbear1.png"> 
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="pnbearPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="pnbearNext()"/>
+        </div>
+
+      </div>
+
+       <div id="right-widgets">  
+
+        <img id="rbear-widgets" onclick="onClickRbear()" src="Images/rbear1.png">
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="rbearPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="rbearNext()"/>
+        </div>
+
+      </div>
+
+    </div> 
+
+     <div class="flex img-size">
+
+      <div id="left-widgets">  
+
+        <img id="star-widgets" onclick="onClickStar()" src="Images/Star1.png"> 
+
+        <div id="btn-slide">
+        	<input type="button" value="<" class="btn-widgets" onclick="starPrev()"/>
+        	<input type="button" value=">" class="btn-widgets" onclick="starNext()"/>
+        </div>
+
+      </div>
+
+    </div> 
+
+  <!-- Images that will appears after click respective widget -->
+
+  <!-- Pokémon Widgets -->
+  <div id="original-image-poke" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/PokeWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Purple Widgets -->
+  <div id="original-image-purple" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/PurpleWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Neon Widgets -->
+  <div id="original-image-neon" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/NeonWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Flamingo Widgets -->
+  <div id="original-image-flamingo" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/FlamingoWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Pokémon Classic Widgets -->
+  <div id="original-image-pokec" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/PokeCWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Sunset Widgets -->
+  <div id="original-image-sunset" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/SunsetWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Brown Bear Widgets -->
+  <div id="original-image-bbear" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/BbearWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Polar Bear Widgets -->
+  <div id="original-image-pbear" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/PbearWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Panda Bear Widgets -->
+  <div id="original-image-pnbear" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/PnbearWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Red Panda Bear Widgets -->
+  <div id="original-image-rbear" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/RbearWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+  <!-- Star Dust Widgets -->
+  <div id="original-image-star" class="original-size-image" onclick="this.style.display='none'">
+    <span class="button-original-image">&times;</span>
+    <div class="spawn-original-widget animated-spawn">
+      <img  src="Images/StarWidgetsView.png" class="img-widget">
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<footer>Site desenvolvido por: <a href="https://github.com/bkostrisch" target="_blank">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
+</body>
+</html>

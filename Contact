@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Qui Qui Universe</title>
+  <link rel="shortcut icon" href="Images/Q.png">
+  <script src="functions.js"></script>  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe">
+
+    <nav>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Widgets">Widgets</a></li>
+        <li><a href="Overlays">Overlays</a></li>
+        <li><a href="Payment">Payment</a></li>
+        <li><a href="Extra">Extras</a></li>
+        <li><a class="current-page" href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id="card">
+    <h1 id="titles">Fale Conosco</h1>
+  
+    <form action="" method="post" enctype="text/plain" id="contact-form">
+    <label>Nome:</label><input type="text" name="nome" id="name" placeholder="Nome Completo" required>
+    <label>Email:</label><input type="Email" name="email" id="email" placeholder="Email" required>
+    <label>Assunto:</label><input type="text" name="subject" id="subject" placeholder="Sobre o que gostaria de falar?" required>
+    <label>Digite sua mensagem:</label><textarea name="mensagem" id="message" rows="10" cols="40" placeholder="Digite aqui o que gostaria de saber sobre a lojinha! Nós responderemos para o email que você inserir acima, caso prefira um contato por rede social, você pode dizer por aqui." required></textarea> 
+    <input type="submit" name="enviar" value="Enviar" id="btn-send" onclick="sendEmail()">
+    </form>
+
+    <div id="social-media">
+      <a href="https://twitter.com/Kostriste" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com/quiqui_universe" target="_blank">Instagram</a>
+      <a href="https://www.behance.net/kostrisch" target="_blank">Behance</a>
+      <a href="https://www.twitch.tv/kostrisch" target="_blank">Twitch</a>
+    </div>
+
+  </div>
+
+<footer>Site desenvolvido por: <a href="https://github.com/bkostrisch">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
+</body>
+</html>

@@ -39,6 +39,14 @@ h3{
 	
 }
 
+h2 {
+
+	font-size: 1rem;
+	font-family: 'Song';
+	color: #716282;
+
+}
+
 p{
 
 	text-align: left;
@@ -122,6 +130,214 @@ footer a:hover{
 	
 }
 
+table {
+
+	margin: 2% auto 2% auto;
+	width: 80%;
+	text-align: center;
+	font-family: 'Song';
+	border-radius: 30px;
+	font-size: 1.5rem;	
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  	-moz-animation: glow 1s ease-in-out infinite alternate;
+  	animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+table th {
+
+	border: 1px;
+	border-radius: 20px;	
+	padding: 1% 0 2% 0;
+}
+
+table td {
+
+	border: 1px;
+	border-radius: 20px;	
+	padding: 2% 0 2% 0;
+	color: #ff99c2;	 
+	font-weight: 700;
+
+}
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px rgb(234, 229, 239), 0 0 11px rgb(234, 229, 239), 0 0 15px rgb(234, 229, 239), 0 0 19px rgb(234, 229, 239), 0 0 25px rgb(234, 229, 239);
+  }
+  to {
+    box-shadow: 0 0 8px #fff, 0 0 13px rgba(139, 114, 167, 0.2), 0 0 16px rgba(139, 114, 167, 0.2), 0 0 20px rgba(139, 114, 167, 0.2), 0 0 25px rgba(139, 114, 167, 0.2), 0 0 30px rgba(139, 114, 167, 0.2), 0 0 35px rgba(139, 114, 167, 0.5);
+  }
+}
+
+#pdf {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5%;
+}
+
+#extra-description {
+
+	padding: 1%;
+	text-align: center;
+
+}
+
+#card-values {
+
+	border: 1px;	
+	box-shadow: 0px 0px 12px 1px #BFB1CE;
+	border-radius: 10px;
+	padding: 5%;
+	margin: 5% 2% 0% 2%;
+}
+
+#card-values h3 {
+
+	margin: 10% 0 0 0;
+
+}
+
+#values {
+
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 2%;
+	width: 100%;
+
+}
+
+#values label {
+
+	font-size: 1.5rem;	
+	font-family: 'Song';
+	color: #b3a2c3;
+	text-shadow: 1px 1px #59446f;
+	font-weight: 800;
+}
+
+#values h3 {
+
+	font-size: 1.8rem;
+	text-shadow: 1px 1px #000;
+	font-family: 'Sweety';
+	color: #d8c8ea;
+
+}
+
+#social-media {
+
+	align-items: center;
+	text-align: center;
+	margin-top: 4%;
+	padding-bottom: 4%;
+	width: 100%;
+
+}
+
+#social-media a{
+
+	text-decoration: none;
+	font-family: 'Song';
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin-right: 5%;
+	margin-left: 5%;
+	color: #957DAD;
+
+}
+
+#social-media a:hover{
+
+	color: #bfb0cf;
+}
+
+#contact-form {
+
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 40%;
+	margin: 2% auto 0 auto;
+	padding: 1%;	
+  	border: 1px;  	
+	box-shadow: 0px 0px 12px 1px #BFB1CE;
+	border-radius: 10px;
+
+}
+
+#contact-form label {
+
+	text-align: center;
+	margin-top: 1.5%;
+	font-family: 'Sweety';
+	color: #957DAD;
+	font-weight: 800;
+
+}
+
+#contact-form input {
+
+	border: 1px;
+	background-color: #EAE5EF;
+	border-radius: 10px;
+	padding: 1.5%;
+	color: #808080;
+	font-family: 'Song';
+	font-size: 1.2rem;
+	font-weight: 600;
+
+}
+
+#contact-form textarea {
+
+	font-family: 'Song';
+	font-size: 1.2rem;
+	font-weight: 600;	
+	color: #808080;
+	border-radius: 10px;
+	border: 1px;	
+	background-color: #EAE5EF;
+
+}
+
+#btn-send {
+
+	font-family: 'Unicorn';
+	font-size: 1.5rem;
+	width: 50%;
+	margin: 4% auto 0 auto;	
+	border-radius: 10px;
+	border: 1px;	
+	background-color: #EAE5EF;
+	color: #808080;
+
+
+}
+
+#btn-send:hover {
+
+	background-color: #bfb0cf;
+	cursor: pointer;
+	color: white;
+
+
+}
+
+#main-tr th {
+
+	color: #716282;
+
+}
+
+#second-tr th {
+
+	color: #9a83af;
+
+}
+
 #logo {
 
 	width:28%;
@@ -165,12 +381,25 @@ footer a:hover{
   	margin-top: 5%;
 }
 
-.flex {
+#link-pdf {
 
+	text-decoration: none;
+	font-family: 'Song';
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #957DAD;
 	display: flex;
-	padding-bottom: 30px;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 
 }
+
+#link-pdf:hover {
+
+	color: #bfb0cf;
+}
+
 
 #how-works {
 
@@ -259,17 +488,26 @@ footer a:hover{
 
 #payment-methods {
 
-	padding: 10px;
+	text-align: center;
+	padding: 5%;
 
 }
 
-#payment-methods h3 {
+#payment-methods label {
 
-	text-align: center;
-	font-size: 1.5rem;
-	text-shadow: 1px 1px #000;
+	font-size: 1.2rem;
 	font-family: 'Sweety';
-	color: #b3a2c3;
+	color: #bfb0cf;
+	text-shadow: 1px 1px #633993;	
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+
+.flex {
+
+	display: flex;
+	padding-bottom: 30px;
 
 }
 
@@ -505,7 +743,21 @@ footer a:hover{
     transform: scale(1);
 }
 
+@media screen and (max-width: 1500px) {
+
+	.img-widget{
+	
+	border-radius: 30px;
+	width: 80%;	
+	}
+
+}
+
 @media screen and (max-width: 650px) {
+
+	#pdf {
+		display: none;
+	}
 
 	footer{
 	
@@ -521,6 +773,19 @@ footer a:hover{
 	
 	}
 
+	#contact-form {
+
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 80%;
+	margin: 2% auto 0 auto;
+	padding: 1%;	
+  	border: 1px;  	
+	box-shadow: 0px 0px 12px 1px #BFB1CE;
+	border-radius: 10px;
+
+	}
 
 	.rounded-picture{
 
@@ -594,6 +859,13 @@ footer a:hover{
 	width: 65%;
 
 	}
+
+	.img-widget{
+	
+	border-radius: 30px;
+	width: 100%;	
+	}
+	
 
 @media screen and (width: 540px) {
 

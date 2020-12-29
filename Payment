@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Qui Qui Universe</title>
+  <link rel="shortcut icon" href="Images/Q.png">
+  <script src="functions.js"></script>
+  
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe">
+
+    <nav>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Widgets">Widgets</a></li>
+        <li><a href="Overlays">Overlays</a></li>
+        <li><a class="current-page" href="Payment">Payment</a></li>
+        <li><a href="Extra">Extras</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id="card">
+    <h1 id="titles">Valores</h1>
+
+    <div id="values" class="flex">
+      <div id="card-values">
+        <img src="Images/chat.png">
+        <h3>Chat</h3>
+        <h2>(ChatBox Personalizada)</h2>
+        <label>R$ 75,00</label>     
+      </div>
+
+      <div id="card-values">
+        <img src="Images/goals.png">
+        <h3>Metas</h3>
+        <h2>(Donates, Subs, Bits, Follow)</h2>
+        <label>R$ 75,00</label>     
+      </div>
+
+      <div id="card-values">
+        <img src="Images/overlay.png">
+        <h3>Overlay</h3>
+        <h2>(4 telas + 6 painéis)</h2>
+        <label>R$ 50,00</label>     
+      </div>    
+    </div>
+
+    <div id="values" class="flex">
+      <div id="card-values">
+        <img src="Images/chatplusgoals.png">
+        <h3>Combo 1</h3>
+        <h2>(ChatBox + 4 Metas)</h2>
+        <label>R$ 100,00</label>     
+      </div>
+
+      <div id="card-values">
+        <img src="Images/chatplusgoalsandoverlay.png">
+        <h3>Combo 2</h3>
+        <h2>(Chat + Metas + Overlay)</h2>
+        <label>R$ 150,00</label>     
+      </div>   
+    </div>
+
+    <h1 id="titles">Formas de Pagamento</h1>
+
+    <div id="payment-methods">
+      <label>Picpay</label>
+      <label>Paypal (+10%)</label>
+      <label>Depósito em Conta</label>
+      <label>Pix</label>
+    </div>
+
+  </div>
+
+<footer>Site desenvolvido por: <a href="https://github.com/bkostrisch" target="_blank">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
+</body>
+</html>

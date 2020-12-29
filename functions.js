@@ -4,8 +4,7 @@
 //Profile Picture - Home
 function onClick(element) {
 	
-  document.getElementById("thumbs").src = element.src;
-  
+  document.getElementById("thumbs").src = element.src; 
   
   document.getElementById("original-image").style.display = "block";
   
@@ -191,7 +190,7 @@ function pokePrev(){
 			
 		pic--;
 	
-		if(pic <min){
+		if(pic < min){
 		
 			pic = max;
 		
@@ -605,3 +604,34 @@ function changeDiana(img) {
 function changeMaickilin(img) {
     document.getElementById("maickilin-overlay").src = 'Images/' + img + ".png";
 }
+
+// Send Email
+
+function sendEmail() {
+
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var message = document.getElementById("message").value;
+	var subject = document.getElementById("subject").value;
+
+	if (name != '' && email != '' && subject != '' && message != ''){
+
+			Email.send({
+	    SecureToken : "7e8ac9b8-509a-4f91-8dc8-14fc1797f971",
+	    To : 'quiquiuniverse@gmail.com',
+	    From : email,
+	    Subject : subject,
+	    Body : `<b>Nome: </b>` + name + `<br/><b>Email: </b>` + email + `<br/><b>Mensagem: </b>` + message,
+	}).then(
+		alert("Obrigada por entrar em contato conosco, caso não haja retorno em 24h nos envie um email: quiquiuniverse@gmail.com ou tente nos catactar pelas redes sociais!")
+		)
+	
+	} else {
+
+		alert("Preencha corretamente os campos!")
+
+	}
+
+}
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Qui Qui Universe</title>
+  <link rel="shortcut icon" href="Images/Q.png">
+  <script src="functions.js"></script>
+  
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" class="center-logo" src="Images/Logo.png" alt="Qui Qui Universe">
+
+    <nav>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Widgets">Widgets</a></li>
+        <li><a href="Overlays">Overlays</a></li>
+        <li><a href="Payment">Payment</a></li>
+        <li><a class="current-page" href="Extra">Extras</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div id="card">
+      <h1 id="titles">Extras</h1>
+      <h3 id="extra-description">Nós também fazemos catálogos de produtos, este foi um que fizemos para a EduMix.</h3>
+      <a href="https://drive.google.com/file/d/1BdyqQGWL4LIBjbVJlz3nhFanoM0aOvb8/view?usp=sharing" id="link-pdf">Abrir Catálogo</a>
+
+      <div id="pdf">
+      <iframe src="Images/Catálogo_EduMix.pdf" width="600" height="780" style="border: none;"></iframe>
+      </div>
+
+  </div>
+
+<footer>Site desenvolvido por: <a href="https://github.com/bkostrisch" target="_blank">Bárbara Hedwig von Kostrisch Corrêa de Oliveira</a></footer>
+</body>
+</html>
